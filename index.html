@@ -17,7 +17,7 @@
 
         <div class="container">
             <h1>Simple Menu</h1>
-            <nav class="simple">
+            <nav class="nav simple">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
@@ -27,9 +27,8 @@
                     <li><a href="#">Assistance</a></li>
                 </ul>
             </nav>
-
             <h2>With icons</h2>
-            <nav class="icons">
+            <nav class="nav icons">
                 <ul>
                     <li>
                         <a href="#">
@@ -79,29 +78,31 @@
             </nav>
 
             <h2>Dropdown Menu</h2>
-            <div class="navigation">
-                <a href="#">Home</a>
-                <div class="dropdown">
-                    <a href="#">About Us</a>
-                    <div class="dropdown-content">
-                        <a href="#">Mission</a>
-                        <a href="#">Vision</a>
-                        <a href="#">Values</a>
+            <div class="navigation drop">
+                <div class="navigation-container">
+                    <a href="#">Home</a>
+                    <div class="dropdown">
+                        <a href="#">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#">Mission</a>
+                            <a href="#">Vision</a>
+                            <a href="#">Values</a>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#">Online Store</a>
-                    <div class="dropdown-content">
-                        <a href="#">Product 1</a>
-                        <a href="#">Product 2</a>
-                        <a href="#">Product 3</a>
+                    <div class="dropdown">
+                        <a href="#">Online Store</a>
+                        <div class="dropdown-content">
+                            <a href="#">Product 1</a>
+                            <a href="#">Product 2</a>
+                            <a href="#">Product 3</a>
+                        </div>
                     </div>
+                    <a href="#">Assistance</a>
                 </div>
-                <a href="#">Assistance</a>
             </div>
 
             <h2>Social Menu</h2>
-            <nav id="icons" class="social-menu">
+            <nav id="icons" class="nav social-menu">
                 <ul>
                     <li>
                         <a href="http://facebook.com"><span> Facebook</span></a>
@@ -122,43 +123,47 @@
             </nav>
 
             <h2>Dropdown Menu With Social</h2>
-            <nav id="icons">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a>
-                        <ul>
-                            <li><a href="#">Mission</a></li>
-                            <li><a href="#">Vision</a></li>
-                            <li><a href="#">Values</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Online Store</a>
-                        <ul>
-                            <li><a href="#">Product 1</a></li>
-                            <li><a href="#">Product 2</a></li>
-                            <li><a href="#">Product 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Assistance</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="http://facebook.com"><span> Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="http://twitter.com"><span> Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="http://youtube.com"><span> YouTube</span></a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com"><span> Instagram</span></a>
-                    </li>
-                    <li>
-                        <a href="http://pinterest.com"><span> Pinterest</span></a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="navigation combination">
+                <div class="navigation-container">
+                    <a href="#">Home</a>
+                    <div class="dropdown">
+                        <a href="#">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#">Mission</a>
+                            <a href="#">Vision</a>
+                            <a href="#">Values</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Online Store</a>
+                        <div class="dropdown-content">
+                            <a href="#">Product 1</a>
+                            <a href="#">Product 2</a>
+                            <a href="#">Product 3</a>
+                        </div>
+                    </div>
+                    <a href="#">Assistance</a>
+                </div>
+                <div class='nav social-menu'>
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com"><span> Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com"><span> Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com"><span> YouTube</span></a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com"><span> Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="http://pinterest.com"><span> Pinterest</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </body>

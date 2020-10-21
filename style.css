@@ -35,22 +35,22 @@ body {
 	padding: 30px;
 }
 
-nav,
+.nav,
 .navigation {
 	background-color: #3246f5;
 }
-nav ul {
+.nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-nav ul li {
+.nav ul li {
 	padding: 20px;
 }
-nav ul li:hover {
+.nav ul li:hover {
 	background-color: #1a2770;
 }
-nav ul a {
+.nav ul a {
 	color: white;
 	text-decoration: none;
 	font-size: 1.4rem;
@@ -121,29 +121,24 @@ nav ul a {
 	margin-top: 0.5rem;
 }
 /* Drop Down Menu */
-/* .hide {
-	display: none;
-}
-.dropdown ul li:hover ul.hide {
-	display: block;
-}
-.dropdown ul li {
-	background-color: #fd5458;
-} */
-
-.navigation {
+.navigation.drop {
 	display: flex;
 	flex-direction: column;
 }
-
-.navigation > *:hover {
+.navigation .navigation-container > *:hover {
 	background-color: #1a2770;
 }
 
-.navigation a {
+@media (min-width: 768px) {
+	.navigation.drop {
+		flex-direction: row;
+	}
+}
+
+.navigation-container a {
 	text-decoration: none;
 	color: white;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	display: block;
 	padding: 20px;
 }
@@ -176,7 +171,7 @@ nav ul a {
 	}
 }
 
-/* Social Media Navu=igation */
+/* Social Media Navigation */
 .social-menu span {
 	display: none;
 }
@@ -185,7 +180,7 @@ nav ul a {
 	flex: 1 0 auto;
 	justify-content: flex-end;
 }
-.social-menu ul li {
+#icons.social-menu ul li {
 	padding: 10px 15px;
 }
 .social-menu a::before {
@@ -206,4 +201,36 @@ nav ul a {
 }
 .social-menu a[href*='pinterest.com']::before {
 	content: '\f231';
+}
+
+/* Dropdown Menu with Social Menu */
+.navigation.combination {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation .navigation-container {
+	display: flex;
+	flex-direction: column;
+}
+.social-menu {
+	order: -1;
+}
+
+.navigation.combination .social-menu ul {
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.navigation.combination {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.navigation .navigation-container {
+		flex-direction: row;
+	}
+	.social-menu {
+		order: 0;
+	}
 }
