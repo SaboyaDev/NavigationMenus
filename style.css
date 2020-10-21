@@ -1,40 +1,80 @@
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 body {
-    margin:0;
-    background: #ff9966;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: 'IBM Plex Serif', serif;
+	margin: 0;
+	background: rgb(63, 94, 251);
+	background: -moz-radial-gradient(
+		circle,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+	background: -webkit-radial-gradient(
+		circle,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+	background: radial-gradient(
+		circle,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
+	font-family: 'IBM Plex Serif', serif;
 }
 .container {
-    background-color: white;
-    min-height: calc( 100vh - 20px );
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px 30px 0 30px;
+	background-color: white;
+	min-height: calc(100vh - 20px);
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 30px;
 }
 
 nav {
-    background-color: #3F51B5;
+	background-color: #3246f5;
 }
 nav ul {
-    list-style:none;
-    margin:0;
-    padding:0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 nav ul li {
-    padding: 20px;
+	padding: 20px;
 }
 nav ul li:hover {
-    background-color: #1a2770;
+	background-color: #1a2770;
 }
 nav ul a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.4rem;
+	color: white;
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+
+/* Simple Menu */
+.simple ul {
+	display: flex;
+	flex-direction: column;
+}
+.simple ul li {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.simple ul li:last-of-type {
+	margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	.simple ul {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.simple ul li {
+		margin: 0;
+	}
 }
