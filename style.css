@@ -175,3 +175,35 @@ nav ul a {
 		width: 100%;
 	}
 }
+
+/* Social Media Navu=igation */
+.social-menu span {
+	display: none;
+}
+.social-menu ul {
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: flex-end;
+}
+.social-menu ul li {
+	padding: 10px 15px;
+}
+.social-menu a::before {
+	font-family: 'Font Awesome 5 Brands';
+	font-size: 1.2rem;
+}
+.social-menu a[href*='facebook.com']::before {
+	content: '\f39e';
+}
+.social-menu a[href*='twitter.com']::before {
+	content: '\f099';
+}
+.social-menu a[href*='youtube.com']::before {
+	content: '\f167';
+}
+.social-menu a[href*='instagram.com']::before {
+	content: '\f16d';
+}
+.social-menu a[href*='pinterest.com']::before {
+	content: '\f231';
+}
